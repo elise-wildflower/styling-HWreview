@@ -7,7 +7,7 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   color: #fff;
   &:hover {
-    background: grey;
+    color: #444 ;
   }
 `
 
@@ -17,7 +17,7 @@ const MyNavBar = styled.div`
   margin-top: 20px;
   margin-bottom: 30px;
   font-family: 'Oswald', sans-serif;
-  background-color: #444;
+  background-color: #99A983;
   `
 
 const NavBar = () => {
