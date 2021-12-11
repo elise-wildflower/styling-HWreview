@@ -1,11 +1,16 @@
 import React from 'react';
+import { Card, Container, Grid, Header, Button, Segment } from 'semantic-ui-react';
 
 
 function Semantic() {
   return (
-    <div> Semantic button here
-      yarn add semantic-ui-react semantic-ui-css
-    </div>
+    <Segment inverted color='black' padded>
+      <Header size="huge">
+        Semantic
+      </Header>
+      <Button color="yellow">Primary Button</Button>
+      <Button>Button</Button>
+    </Segment>
   );
 }
 

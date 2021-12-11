@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const StyledButton = styled.button`
   margin-right: 10px;
@@ -9,26 +9,16 @@ const StyledButton = styled.button`
   border-radius: 5px;
   background-color: ${props => (props.primary && "#E4E5B8")};
   color: ${props => (props.primary ? "#696969" : "#566344")};
-  
+
   &:hover {
-    background-color: ${props => (props.primary ? "#f3f5c1" : "white")};
-  }
-  `
+    background-color: ${props => (props.primary ? "#f3f5c1" : "#fff" )};
+}
+`
 
-  // OR 
-  // ${({ primary }) => 
-  // primary && 
-  // css`
-  // background-color: ##E4E5B8;
-  // color: #696969
-  // &:hover {
-  //     background-color: #f3f5c1;
-  // }}
-
-const Button = ({ primary, children }) => {
-  return(
+const MyButton = ({children, primary}) => {
+  return (
     <StyledButton primary={primary}>{children}</StyledButton>
   )
 }
 
-export default Button
+export default MyButton
